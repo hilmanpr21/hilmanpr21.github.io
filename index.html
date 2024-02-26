@@ -1,505 +1,239 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" />
-        <title>
-            International Visits to London
-        </title>
-        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-        <link href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" rel="stylesheet">
-        <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+<html lang="en">
 
-        <!--Load the chart libraries. Dimple is built on D3, and you need to also add D3-->
-        <script charset="utf-8" src="https://d3js.org/d3.v4.min.js"></script>
-        <script charset="utf-8" src="https://cdnjs.cloudflare.com/ajax/libs/dimple/2.3.0/dimple.latest.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Hilman Prakoso</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Imperial
+  * Updated: Jan 29 2024 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div data-aos="fade-in">
+        <h1>Hi, I am <span>HILMAN PRAKOSO</span></h1>
+        <h2>I am <span class="typed" data-typed-items="a Spatial Data Scientist, an Architect, a Photographer"></span> based in London, UK</h2>
         
-        <!--to control the slider-->
-        <link href='style_individual_assessment.css' rel='stylesheet' />     
-    <style>
-        body { margin:0; padding:0; }
-        #map { position:absolute; top:0; bottom:0; width:100%; }
-    </style>
-    </head>
+        <div class="social-links">
+          <a href="https://www.instagram.com/hilman_pr/" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://github.com/hilmanpr21" class="github"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/hilmanprakoso/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo mr-auto" a href="index.html" class="logo mr-auto">Hilman Prakoso</a></h1>
+      <!-- Uncomment below if you prefer to use a text logo -->
+      <!-- <h1 class="logo mr-auto"><a href="index.html">Imperial</a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about">
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <div class="col-md-6 about-img">
+            <img src="assets/img/img_headshot.jpg" alt="">
+          </div>
+
+          <div class="col-md-6 about-content">
+            <h2 class="about-title">Through Data, Design, and Photography Perspectives</h2>
+            <p class="about-text">
+              Hi, My name is Hilman Prakoso, an interdisciplinary urbanist based in London, United Kingdom. I just graduated from my master's degree in Urban Spatial Science at University College London (UCL). I approach urbanism through combination of spatial analytics, urban studies, data science, architecture and photography with a spirit of creating sustainable cities. 
+            </p>
+            <p class="about-text">
+              Before taking master degree, along with my 2 friends, I found an urban research collective in Surabaya, Indonesia, called <a href="suroboyongalorngidul.net" target="_blank"> Suroboyo Ngalor Ngidul</a>, which studies urban-related issues, such as citizen's activities, economic infrastructure, informal public transportation, by conducting walk-in interview and mapping. In my meantime, I enjoy observing urban's interaction and spatial experience through running and cycling, and capture the moment through photography.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
 
 
-    <body>
-        <div id='map'></div>
 
-        <!--set up Title and mode panel-->
-        <div class='map-overlay top'>   
-            <div class='map-overlay-inner'>
-                <h1>International Visitors to London</h1>
-                <h2>2002-2019</h2>
-                <p>This map shows the total number of travelers from different countries across the world that come to London. Labels on the map are in thousands. The graph shows the trend of travelers. Change the country option to see the trend in a specific country. To see the change across the world, try to use the slider on the right corner of the map.</p>
-                
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Project Portfolios</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">Here are glimpse of wide range projects I did, related to urban data analytics and data visualisations</p>
+          </div>
+        </div>
 
-                <br>
+        <div class="row portfolio-container">
 
+          <div class="col-lg-4 portfolio-item">
+            <a href="https://github.com/hilmanpr21/CASA0006_DSSS_fiscal-decentralization/blob/main/Spatial_pattern_of_Fiscal_Decentralisation.ipynb" target="_blank">
+              <img src="assets/img/portfolio/Fiscal Decentralisation.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Spill-over Effect of Fiscal Decentralisation Policy</h4>
+                <p>An analysis on Indonesian government's revenue expenditure using machine learning and mapping to detect spill-over effect of fiscal decentralisation policy in East Java, Indonesaia</p>
+              </div>
+            </a>
+          </div>
 
-                </script>
-                
-                <!--This is the div container for the one-line chart-->
-                <div id="chartContainer">
-                    <h3 id="charttitle">Total International Visits to London</h3>
-                    <p id="chartsubhead">This Graph show trend of visitors in London</p>
-                    <p><select id="CountryMenu"><option>Change Country Here:</option></select></p>  <!-- This is the drop down menu to select different countries-->
-                </div>
+          <div class="col-lg-4 portfolio-item">
+            <a href="https://hilmanpr21.github.io/CASA0023_Remote-Sensing-Learning-Diary/" target="_blank" >
+              <img src="assets/img/portfolio/mindmap.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Foundation of Remote Sensing</h4>
+                <p>A learning guidance and summary for basic remote sensing methods</p>
+              </div>
+            </a>
+          </div>
 
-                <script>
+          <div class="col-lg-4 portfolio-item filter-web">
+            <a href="assets/img/portfolio/tourist.png" target="_blank">
+              <img src="assets/img/portfolio/tourist.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>London Visitor</h4>
+                <p>visualisations of numbers of tourist from across the world coming to London for the 2 decades, to analyse tourism market.</p>
+              </div>
+            </a>
+          </div>
 
-                    d3.csv("international-visits-london-by-country.csv", function(VisitsData) {
-                    
-                    var chartdata;
-                        
-                        
-                    var countryMenu = document.getElementById("CountryMenu"); 
-                    
-                    for(var i = 0; i < VisitsData.length; i++) {            // In this loop we add the names of all the countries in the CSV to the drop down menu
-                        var el = document.createElement("option");
-                        el.textContent = VisitsData[i].countryoforigin;
-                        el.value = VisitsData[i].index
-                        countryMenu.appendChild(el);
-                        }       
-                    
-                    function SetVisitsData(index) {   // Function that extracts the population timeseries for the selected countries
-                        
-                            console.log(VisitsData[index]); // Show the data of the row in the console
+          <div class="col-lg-4 portfolio-item filter-web">
+            <a href="https://hilmanpr21.github.io/CASA0003_group_digital_visualisation/" target="_blank">
+              <img src="assets/img/portfolio/chronourbanism.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Chorono-urban Workspace</h4>
+                <p>A collaborative research on the changing landscape and nature of working places before and after the COVID-19 Pandemic</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 portfolio-item filter-web">
+            <a href="https://hilmanpr21.github.io/CASA0003_group_digital_visualisation/wfh_visualisation/wfh.html" target="_blank">
+              <img src="assets/img/portfolio/wfh.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>The change of Work-from-Home</h4>
+                <p>Analysis the change in spatial distribution of people work-from-home across London, United Kingdom, through data visualisation in borough and ward level for the last 10 years</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 portfolio-item filter-web">
+            <a href="https://hilmanpr21.github.io/CASA0023_group-presentation/#1" target="_blank">
+              <img src="assets/img/portfolio/Semarang tidal flood.png" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Semarang Tidal Floods and informal Settlement Improvement</h4>
+                <p>A proposed strategy to prevent Semarang's annual tidal flood disaster by utilising remote sensing data to analyse critical settlement and access</p>
+              </div>
+            </a>
+          </div>
+
             
-                            document.getElementById("charttitle").innerHTML = VisitsData[index].countryoforigin; // The name of the country is inserted into the chart title
-            
-                            // change to long data format as it is require by dimple.js
-                            chartdata = [
-                                { "Year":"2002","Visits":(VisitsData[index].visits_2002*1000) },
-                                { "Year":"2003","Visits":(VisitsData[index].visits_2003*1000) },
-                                { "Year":"2004","Visits":(VisitsData[index].visits_2004*1000) },
-                                { "Year":"2005","Visits":(VisitsData[index].visits_2005*1000) },
-                                { "Year":"2006","Visits":(VisitsData[index].visits_2006*1000) },
-                                { "Year":"2007","Visits":(VisitsData[index].visits_2007*1000) },
-                                { "Year":"2008","Visits":(VisitsData[index].visits_2008*1000) },
-                                { "Year":"2009","Visits":(VisitsData[index].visits_2009*1000) },
-                                { "Year":"2010","Visits":(VisitsData[index].visits_2010*1000) },
-                                { "Year":"2011","Visits":(VisitsData[index].visits_2011*1000) },
-                                { "Year":"2012","Visits":(VisitsData[index].visits_2012*1000) },
-                                { "Year":"2013","Visits":(VisitsData[index].visits_2013*1000) },
-                                { "Year":"2014","Visits":(VisitsData[index].visits_2014*1000) },
-                                { "Year":"2015","Visits":(VisitsData[index].visits_2015*1000) },
-                                { "Year":"2016","Visits":(VisitsData[index].visits_2016*1000) },
-                                { "Year":"2017","Visits":(VisitsData[index].visits_2017*1000) },
-                                { "Year":"2018","Visits":(VisitsData[index].visits_2018*1000) },
-                                { "Year":"2019","Visits":(VisitsData[index].visits_2019*1000) }
-                                ];
-            
-                    }
-                    
-                    SetVisitsData(62);
-                    
-                    
-                    var svg = dimple.newSvg("#chartContainer", 400, 140); // The chart is an svg variable assigned to the chartcontainer div. It's width and height are also assigned here
-                    
-                        
-                    var myChart = new dimple.chart(svg, chartdata);  // Create the chart
-                    myChart.setBounds(50, 5, 310, 100);              // Set the chart bounds within the svg container
-            
-                    myChart.defaultColors = [
-                        new dimple.color("#bf812d") // brown
-                    ]
-            
-            
-                    var x = myChart.addTimeAxis("x", "Year", "%Y", "%Y");  // Define the x axis. The latter statements define the date format which we want to be year only
-                    x.timeInterval = 1;  
-            
-                    var y = myChart.addMeasureAxis("y", "Visits"); // Define the y axis
-                    y.ticks = 6;
-            
-                    var s = myChart.addSeries(null, dimple.plot.line);
-                    s.lineMarkers = false;
-                    //s.interpolation = "cardinal";  //to make flowy line
-            
-                    myChart.draw(500); // Draw the chart. The number is the animation delay in miliseconds
-            
-            
-                    svg.selectAll("path.dimple-proj").style("stroke-dasharray", "2"); // Make the projected data a dashed line and the grid colour lighter.
-                    svg.selectAll("path.domain").style("stroke", "#CCC");
-                    svg.selectAll("g.tick line").style("stroke", "#CCC");
-            
-            
-                    document.getElementById("CountryMenu").onchange = function() {    // event listener for changing graph
-                        var x = document.getElementById("CountryMenu").value;
-                        console.log(x);
-                        SetVisitsData(x);   // Run the function that will update chartdata with the user selected city
-
-                        
-                        myChart.data = chartdata; // Update the chart with the new chartdata
-                        myChart.draw(500);
-                        }          
-                        
-                    });
-                    
-
-                </script>
-
-                
-
-                <br>
-
-                <!--To set div of Quarter Chart-->
-                <div id="chartContainer2" style="display: hide;" >
-                    <h3 id="charttitle2">Total International Visitor to London (Quarter)</h3>
-                    <p>This Graph show trend of total visitors in London per quarter</p>
-                </div>
-
-                <script>
-
-                    d3.csv("international-visits-london-by-country.csv", function(VisitsData) {
-                        
-                        var VisitsDataIndex = 63;       // Here we select which row of the csv data is going to be loaded. Change the number to change which row is shown in the chart. In this case Quarter data are on row 63-66
-                        console.log(VisitsData[0]);     // Show the data of the row in the console
-                        
-                        var svg = dimple.newSvg("#chartContainer2", 400, 200); // The chart is an svg variable assigned to the chartcontainer div. It's width and height are also assigned here
-                          
-
-
-                       //lop the data to make multiple line in the chart
-                        
-                        var chartdata = [];
-        
-                        
-                        for (let VisitsDataIndex = 63; VisitsDataIndex < 67; VisitsDataIndex++) {
-                            var name = VisitsData[VisitsDataIndex].countryoforigin;
-                            console.log(name);
-                            chartdata.push(
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2002","visits":(VisitsData[VisitsDataIndex].visits_2002*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2003","visits":(VisitsData[VisitsDataIndex].visits_2003*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2004","visits":(VisitsData[VisitsDataIndex].visits_2004*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2005","visits":(VisitsData[VisitsDataIndex].visits_2005*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2006","visits":(VisitsData[VisitsDataIndex].visits_2006*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2007","visits":(VisitsData[VisitsDataIndex].visits_2007*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2008","visits":(VisitsData[VisitsDataIndex].visits_2008*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2009","visits":(VisitsData[VisitsDataIndex].visits_2009*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2010","visits":(VisitsData[VisitsDataIndex].visits_2010*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2011","visits":(VisitsData[VisitsDataIndex].visits_2011*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2012","visits":(VisitsData[VisitsDataIndex].visits_2012*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2013","visits":(VisitsData[VisitsDataIndex].visits_2013*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2014","visits":(VisitsData[VisitsDataIndex].visits_2014*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2015","visits":(VisitsData[VisitsDataIndex].visits_2015*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2016","visits":(VisitsData[VisitsDataIndex].visits_2016*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2017","visits":(VisitsData[VisitsDataIndex].visits_2017*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2018","visits":(VisitsData[VisitsDataIndex].visits_2018*1000) },
-                            { "Period":VisitsData[VisitsDataIndex].countryoforigin,"Year":"2019","visits":(VisitsData[VisitsDataIndex].visits_2019*1000) },
-                            )
-                        }
-        
-        
-                        var myChart = new dimple.chart(svg, chartdata);  // Create the chart
-                        myChart.setBounds(50, 5, 310, 120);             // Set the chart bounds within the svg container
-        
-                        myChart.defaultColors = [
-                            new dimple.color("#bf812d"), // brown
-                            new dimple.color("#f6e8c3"), // orange
-                            new dimple.color("#80cdc1"), // gray
-                            new dimple.color("#01665e")  // dark gray
-
-                        ];
-        
-        
-                        var x = myChart.addTimeAxis("x", "Year", "%Y", "%Y");  // Define the x axis. The latter statements define the date format which we want to be year only
-        
-                        x.timeInterval = 1
-                        ;
-                        
-                        var y = myChart.addMeasureAxis("y", "visits"); // Define the y axis
-                        y.ticks = 6;
-        
-                        var s = myChart.addSeries("Period", dimple.plot.line);
-                        s.lineMarkers = false;
-                        s.lineWeight = 3;
-                        
-                        myChart.addLegend(50, 180, 420, 120, "left");
-
-        
-                        myChart.draw(500); // Draw the chart. The number is the animation delay in miliseconds
-
-                        svg.selectAll("path.domain").style("stroke", "#CCC"); //styling the chart
-                        svg.selectAll("g.tick line").style("stroke", "#CCC");
-        
-                                
-        
-        
-                    });
-
-
-                </script>
-
-                <br>
-
-                <p class="credit">Visitor data: <a href="https://data.london.gov.uk/dataset/number-international-visitors-london">International visit to London</a>.© Office for National Statistics.</p>
-
-
-            </div>
-
 
         </div>
 
-        <!--To make div of slider-->
-        <div class='map-slider'>
-            <div class='map-slider-inner'>
-                <p>Slide to see the change of International Visitors from different year</p>
-                <table><tr><td>
-                    <input id='slider' type='range' min='0' max='17' step='1' value='0' list='tickmarks' />  
-                    <datalist id="tickmarks">                   //option of the slider
-                    <option value="0" label="2002">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6" label="2008">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-                    <option value="11">
-                    <option value="12">
-                    <option value="13">
-                    <option value="14" label="2016">
-                    <option value="15">
-                    <option value="16">
-                    <option value="17" label="2019">
-                    </datalist>
-                    </td>
-                    <td> 
-                    <label id='year'>2002</label>
-                    </td>
-                    </tr></table>
-            </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="copyright">
+            &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            <!--
+            All the links in the footer should remain intact.
+            You can delete the links only if you purchased the pro version.
+            Licensing information: https://bootstrapmade.com/license/
+            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+          -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          </div>
         </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
-        <script>
-            mapboxgl.accessToken = 'pk.eyJ1IjoiaGlsbWFucHIyMSIsImEiOiJjbGQxbGhycTAwZG01M3BxcWV5ejB2ZGtzIn0.wnQW51k0xp5SEd1ggujsiA';
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-            //Load a new map in 'map' HTML div
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/hilmanpr21/clevt8cm5002h01phqotp9sqv',
-                center: [-10, 40], // set starting point
-                zoom: 3 // set starting zoom
-            });
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
-            map.addControl(new mapboxgl.NavigationControl());
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 
-            var years = [
-                '2002',
-                '2003',
-                '2004',
-                '2005',
-                '2006',
-                '2007',
-                '2008',
-                '2009',
-                '2010',
-                '2011',
-                '2012',
-                '2013',
-                '2014',
-                '2015',
-                '2016',
-                '2017',
-                '2018',
-                '2019',
-                '2020',
-                '2021'
-            ];
-
-            map.on('load', function(){
-
-                // this is the function that runs when the user change the data year
-
-                function setYear(year){
-                    document.getElementById('year').textContent = years[year] //to set the label of slider to correct year
-
-                    var pp = map.getPaintProperty('country_point', 'circle-radius');
-                    console.log(pp);
-                    pp.property = "visits_" + years[year]; // update the pp circle-radius to the new column set by the user
-                    map.setPaintProperty('country_point', 'circle-radius',pp);
-                    console.log(map.getPaintProperty('country_point', 'circle-radius'));
-
-
-                    var lp = map.getPaintProperty('line_visit', 'line-color');
-                    console.log(lp);
-                    lp.property = "visits_" + years[year];
-                    map.setPaintProperty('line_visit', 'line-color', lp);
-                    console.log(map.getPaintProperty('line_visit', 'line-color'));
-
-                    var lwp = map.getPaintProperty('line_visit', 'line-width');
-                    console.log(lwp);
-                    lwp.property = "visits_" + years[year];
-                    map.setPaintProperty('line_visit', 'line-width', lwp);
-                    console.log(map.getPaintProperty('line_visit', 'line-width'));
-
-
-                    var yearcol= "visits_" + String(years[year]);
-
-                    var filters = ['>', yearcol, 0];
-                    map.setFilter('country_point', filters);
-                    map.setFilter('line_visit', filters);
-
-
-
-                    
-                    var textfield = "{" + yearcol + "}m";
-
-                    console.log(textfield);
-
-                    map.setLayoutProperty('labels', 'text-field', textfield);
-                    var filters = ['>', yearcol, 0];
-                    map.setFilter('labels', filters);
-                }
-
-
-                 // add country (line) layer to the map
-                 map.addLayer({
-                    id: 'line_visit',
-                    type: 'line',
-                    source: {
-                        type: 'vector',
-                        url: 'mapbox://hilmanpr21.2pzp35my' // Your Mapbox tileset Map ID
-                        },
-                    'source-layer': 'international_visits_circle_l-6y1dwb', // name of tileset layer
-                    'layout': {
-                        'visibility': 'visible'
-                        },
-                    paint: {
-                        'line-color': {
-                            property: 'visits_2002',
-                            stops: [
-                            [0, '#ffffcc'],
-                            [50, '#ffeda0'],
-                            [150, '#fed976'],
-                            [1000, '#feb24c']]},
-                        'line-width': {
-                            property: 'visits_2002',
-                            stops: [
-                            [0, 1],
-                            [50, 3],
-                            [150, 8],
-                            [1000, 15]]},
-                        'line-opacity': 0.85
-                        
-                        }
-                });
-                
-                // add country (circle) layer to the map
-                map.addLayer({
-                    id: 'country_point',
-                    type: 'circle',
-                    source: {
-                        type: 'vector',
-                        url: 'mapbox://hilmanpr21.2sy9v8w3'
-                    },
-                    'source-layer':'international_visits_point-axo82q',
-                    'layout': {
-                        'visibility': 'visible'
-                    },
-                    paint: {
-                        'circle-color': '#fffef7',
-                        'circle-opacity': 0.80,
-                        'circle-stroke-width': {
-                            stops: [[8, 1], [13, 3], [16, 9]]
-                        },
-                        'circle-stroke-color': '#fdbb84',
-                        'circle-stroke-opacity': 1,
-                        'circle-radius': {
-                            property: 'visits_2002',
-                            stops: [
-                            [{zoom: 1, value: 0}, 5],        // zoom level 1; value of the column 0; circle radius 1; it means that in the zoom level 9, circle radius will varied between 1-5
-                            [{zoom: 1, value: 100}, 35],
-                            [{zoom: 1, value: 1000}, 50],
-                            [{zoom: 4, value: 0}, 5],        // zoom level 4; value of the column 0; circle radius 1; it means that in the zoom level 9, circle radius will varied between 1-5
-                            [{zoom: 4, value: 100}, 20],
-                            [{zoom: 4, value: 1000}, 35],
-                            [{zoom: 9, value: 0}, 7],        // zoom level 9; value of the column 0; circle radius 1; it means that in the zoom level 9, circle radius will varied between 1-5
-                            [{zoom: 9, value: 100}, 35],
-                            [{zoom: 9, value: 1000}, 65],
-                            [{zoom: 12, value: 0}, 8],
-                            [{zoom: 12, value: 100}, 40],
-                            [{zoom: 12, value: 1000}, 50],
-                            [{zoom: 16, value: 0}, 10],
-                            [{zoom: 16, value: 100},50],
-                            [{zoom: 16, value: 1000},100],
-                            ]
-                        }
-                    }
-                });
-
-                map.addLayer({
-                    'id': 'labels',
-                    'type': 'symbol',
-                    'source': 'country_point',
-                    'source-layer': 'international_visits_point-axo82q',
-                    'layout': {
-                        'text-field': '{visits_2002}',
-                        'text-font': ['Open Sans Bold', 'Arial Unicode MS Bold'],
-                        'text-size': {
-                            stops: [[8, 12], [12.5, 12], [12.6, 12], [16, 20]]
-                        }
-                    },
-                    'paint': {
-                        'text-color': 'rgba(0,0,0,0.6)'
-                    }
-                });
-              
-
-                //set filter to remove  null value
-                var filters = ['>', 'spend_2002', 0];
-                map.setFilter('country_point', filters);
-                map.setFilter('line_visit', filters);
-
-                var prevyear = 0;
-
-                document.getElementById('slider').addEventListener('input', function(e) {
-                    var year = parseInt(e.target.value);
-                    setYear(year);
-                });
-
-                var mypopup = new mapboxgl.Popup({offset:[150,20],closeButton: false});
-
-                // Another event listener that adds the popup when the user puts their cursor over the tube circles
-                map.on('mouseover', 'country_point', function (e) {
-                        mypopup
-                            .setLngLat(e.features[0].geometry.coordinates)
-                            .setHTML("<h3>" + e.features[0].properties.COUNTRY + "</h3>" )
-                            .addTo(map);
-                    });
-
-                map.on('mouseover', 'line_visit', function (e) {
-                        mypopup
-                            .setLngLat(e.features[0].geometry.coordinates)
-                            .setHTML("<h3>" + e.features[0].properties.COUNTRY + "</h3>")
-                            .addTo(map);
-                    });
-
-                // Change the cursor to a pointer when the mouse is over the county layer.
-                map.on('mouseenter', 'country_point', function () {
-                    map.getCanvas().style.cursor = 'pointer';
-                });
-
-                // Change it back to a pointer when it leaves and remove the popup window.
-                map.on('mouseleave', 'country_point', function () {
-                    map.getCanvas().style.cursor = '';
-                    mypopup.remove();
-                });
-
-
-
-
-
-            });
-
-
-
-        </script>
-
-        
-    </body>
+</body>
 
 </html>
